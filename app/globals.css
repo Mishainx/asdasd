@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'pokemon';
+  src: url('/app/assets/pokemon/Pokemon\pokemon.ttf')
+}
+
+:root, body{
+  width: 100%;
+  overflow: hidden;
+  background: url("https://www.youtube.com/watch?v=yMXIkdgrs0I");
+}
+
+#hero{
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.capa{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1c1c1d;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  z-index: 1;
+}
+
+.asd{
+  position: absolute;
+  -webkit-text-stroke: 2px blue;
+  color: transparent;
+  text-align: center;
+  width: 40%;
+  height: 60vh;
+  z-index: 2;
+  font-family: Pokemon;
+  color: yellow;
+
+}
